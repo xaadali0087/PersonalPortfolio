@@ -1,0 +1,19 @@
+.primary {
+  @apply w-full text-black border-2 border-black bg-white font-bold capitalize;
+  font-size: 1.125rem;
+  padding: 0.875rem;
+  border-radius: 0.875rem;
+}
+.primary:hover {
+  cursor: pointer;
+  background-color: #fff3d3;
+  box-shadow: 8px 7px #000;
+}
+.secondary {
+  @apply w-full 
+  border-2 border-themeColor h-12 rounded-full hover:bg-gradient-to-r from-themeColor to-bgColor
+  text-lg capitalize font-poppins;
+}
+.loaderWrapper {
+  @apply flex justify-center items-center;
+}

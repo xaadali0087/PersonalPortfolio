@@ -1,0 +1,13 @@
+.sliderContainer {
+  @apply w-full  flex justify-center items-center h-full;
+
+  .card {
+    @apply w-[90%]  box-border p-2 bg-white rounded-md min-h-[447px] flex flex-col;
+
+    .header {
+      @apply w-full h-[385px] rounded-md relative;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}

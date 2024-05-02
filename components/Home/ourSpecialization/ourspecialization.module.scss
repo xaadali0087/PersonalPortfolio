@@ -1,0 +1,169 @@
+.wrapper {
+  @apply w-full flex justify-center;
+  .container {
+    @apply w-full max-w-[1500px] flex flex-col items-center py-10;
+    .heading {
+      @apply w-full flex flex-col items-center font-poirets;
+      label {
+        @apply text-sm text-white md:text-lg lg:text-4xl font-bold;
+      }
+      p {
+        @apply text-center text-gray-200 text-lg mt-4;
+      }
+    }
+    .specialization {
+      @apply w-full lg:max-w-[1000px] xl:max-w-[1200px] min-h-[520px]  mt-24  flex  justify-center relative bg-none md:bg-none;
+      @media (min-width: 1024px) {
+        background-image: url("/Backgrounds/specialization.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 60%;
+      }
+
+      .Reactpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-6 lg:left-80 lg:-top-10 animate-outerPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .react {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-pulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Mysqlpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-[40%] lg:left-[55%] lg:-top-10 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .sql {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Nextpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute right-6  lg:right-20 lg:-top-10 animate-outerPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .next {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-pulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Nuxtpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-6 top-32 lg:-left-10 lg:top-16 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .nuxt {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Vuepulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-[40%] top-32 lg:left-[39%] lg:top-32 animate-outerPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .vue {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-pulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Flutterpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute right-6 top-32 lg:left-[73.5%] lg:top-28 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .flutter {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Blockpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-6 top-72 lg:left-60 lg:top-60 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .blockchain {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Laravelpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-[40%] top-72  lg:left-[58.5%] lg:top-64 animate-outerPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .laravel {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-pulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Wordpresspulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute right-6 bottom-40 lg:-right-7 lg:bottom-40 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .wordpress {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Nodejspulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute  left-6 bottom-6 lg:left-32 lg:-bottom-8 animate-outerPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .node {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-pulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Mongodbpulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute left-[40%] bottom-6 lg:left-[39%] lg:bottom-8 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .mongodb {
+            @apply flex justify-center items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-4xl;
+            }
+          }
+        }
+      }
+      .Web3pulse {
+        @apply w-20 h-20 flex justify-center items-center rounded-full absolute right-6 bottom-6 lg:left-[71.5%] lg:bottom-2 animate-slowOuterPulse;
+        .circle {
+          @apply w-20 h-20 rounded-full bg-bgColor flex justify-center items-center;
+          .web3 {
+            @apply flex justify-center  items-center w-10 h-10 rounded-full bg-bgColor  animate-slowPulse;
+            .icon {
+              @apply text-[#61dafb] text-3xl;
+            }
+          }
+        }
+      }
+    }
+  }
+}

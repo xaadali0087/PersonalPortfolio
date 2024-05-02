@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Risque&family=Tai+Heritage+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+html,
+body {
+  @apply bg-bodyColor font-mulishs;
+}
+
+
+/*scrollBar*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFC42A;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFC42A;
+  cursor: pointer;
+}
+/*scrollBar*/
+
+
+.swiper {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-left:0px;
+  margin-top:0px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+// }

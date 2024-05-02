@@ -1,0 +1,30 @@
+.wrapper {
+  @apply w-full flex justify-center;
+  .container {
+    @apply max-w-[1300px] w-full flex flex-col items-center lg:flex-row lg:justify-center py-8;
+    .hire {
+      @apply lg:max-w-[50%] w-full flex flex-col py-4  px-8 items-center lg:items-start;
+      .heading {
+        @apply max-w-[400px] leading-snug w-full text-center text-white text-3xl md:leading-snug md:text-5xl md:max-w-[500px] lg:text-left font-poirets;
+        span {
+          @apply text-themeColor;
+        }
+      }
+      .text {
+        @apply max-w-[400] w-full text-center text-white text-xl mt-2 lg:mt-4 lg:text-left lg:max-w-[565px] font-poirets;
+      }
+      .hirebtn {
+        @apply w-full text-center lg:text-left py-4;
+        button {
+          @apply px-6 py-2 border border-themeColor text-themeColor font-bold rounded-md cursor-pointer hover:bg-themeColor hover:border-bgColor hover:text-bgColor font-poirets;
+        }
+      }
+    }
+    .headerlogo {
+      @apply lg:max-w-[45%] py-4 lg:py-0  w-full flex justify-center lg:justify-end lg:px-10  overflow-hidden relative;
+      .logo {
+        @apply relative;
+      }
+    }
+  }
+}

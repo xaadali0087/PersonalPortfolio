@@ -1,0 +1,6 @@
+.wrapper {
+  @apply w-full min-h-[100vh] flex flex-col items-center justify-between;
+  .container {
+    @apply w-full  lg:pb-6 flex flex-col items-center;
+  }
+}
