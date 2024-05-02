@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-full h-auto flex flex-col items-center lg:items-center xl:items-center;
+  .container {
+    @apply max-w-[1500px] w-full flex flex-col md:flex-wrap lg:flex-row lg:justify-center lg:gap-x-6 items-center gap-y-6;
+    .card {
+      @apply max-w-[380px] min-h-[220px] p-4 py-6 flex flex-col items-start rounded-3xl bg-green-600;
+      .heading {
+        @apply w-full text-white font-poirets  font-bold text-left px-4 text-xs md:text-sm lg:text-xl;
+      }
+      .text {
+        @apply w-full text-white text-left font-poirets  px-4 mt-2 text-xl;
+      }
+    }
+  }
+}

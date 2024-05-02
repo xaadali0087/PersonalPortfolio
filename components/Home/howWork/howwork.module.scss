@@ -1,0 +1,43 @@
+.wrapper {
+  @apply w-full flex justify-center;
+  .container {
+    @apply max-w-[1500px] w-full flex flex-col items-center px-2 py-10;
+    .heading {
+      @apply max-w-[650px] w-full flex flex-col items-center;
+      label {
+        @apply mt-4  text-lg text-white font-bold lg:text-3xl;
+      }
+      p {
+        @apply mt-2 mb-4 text-lg text-gray-300;
+      }
+    }
+    .work {
+      @apply w-full flex flex-col items-center md:flex-wrap lg:flex-row lg:justify-evenly bg-none md:bg-none;
+      @media (min-width: 1024px) {
+        background-image: url("/Backgrounds/wrk_bg.svg");
+        background-position: 50% 0%;
+        background-size: 70%;
+        background-repeat: no-repeat;
+      }
+      .card {
+        @apply max-w-[300px] w-full flex flex-col items-center py-2;
+        .logo {
+          @apply w-full flex justify-center;
+          .circlediv {
+            @apply flex justify-center relative w-20 h-20 rounded-full bg-bgColor hover:bg-themeColor cursor-pointer;
+            .icon {
+              @apply absolute -top-2 max-w-[100px] text-white text-[100px];
+            }
+            .hoverIcon{
+              @apply absolute top-10 max-w-[100px] text-white text-2xl;
+
+            }
+          }
+        }
+        .text {
+          @apply mt-4 w-full text-lg text-center font-bold text-white;
+        }
+      }
+    }
+  }
+}

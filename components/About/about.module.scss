@@ -1,0 +1,33 @@
+.wrapper {
+  @apply w-full flex justify-center py-4;
+  .container {
+    @apply w-full max-w-[460px] flex flex-col items-center;
+    .balance {
+      @apply w-[350px] lg:min-w-[450px] max-w-[460px] flex flex-col items-center gap-y-2;
+      .heading {
+        @apply w-full text-white text-center font-risque text-3xl;
+      }
+      input {
+        @apply w-full outline-none border-none py-2 rounded-md px-1 bg-bgColor text-white;
+      }
+      p {
+        @apply text-red-300;
+      }
+      button {
+        @apply w-full mt-2 bg-themeColor rounded-md py-2 text-white font-risque text-2xl;
+      }
+    }
+    .showData {
+      @apply w-full flex flex-col justify-center gap-y-2;
+      .address {
+        @apply w-full;
+        label {
+          @apply text-white text-2xl font-bold;
+        }
+        p {
+          @apply text-white text-sm;
+        }
+      }
+    }
+  }
+}

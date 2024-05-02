@@ -1,0 +1,63 @@
+.wrapper {
+  @apply w-full min-h-screen;
+  .container {
+    @apply w-full flex items-center justify-center h-screen;
+    .signin {
+      @apply sm:w-full md:mx-4 lg:w-[700px] flex flex-col justify-center lg:flex-row border bg-bgColor p-4 rounded-2xl px-5 overflow-hidden;
+      .left {
+        @apply w-full lg:w-[45%] flex flex-col justify-center items-center py-10;
+        .profile {
+          @apply w-full flex flex-col justify-center items-center;
+          .image {
+            @apply max-w-[100%] bottom-0;
+          }
+          .heading {
+            @apply font-risque text-4xl text-white text-center my-6;
+          }
+        }
+        .form {
+          @apply w-full flex flex-col gap-y-2 items-center justify-center;
+          .InputDiv {
+            @apply w-full border-themeColor border-b;
+            .orginput {
+              @apply w-full outline-none h-6 bg-transparent py-5 text-white placeholder:text-white;
+            }
+            .inputPlace {
+              @apply w-full outline-none h-6 bg-transparent py-5 placeholder:text-red-500;
+            }
+          }
+          .error {
+            @apply w-full text-xs text-red-500 flex justify-start;
+          }
+          .forgetpassword {
+            @apply w-full flex justify-end text-white text-xs;
+          }
+          .submitbtn {
+            @apply w-full mt-6 text-center bg-[#FFC42A] py-0 rounded-sm cursor-pointer;
+            button {
+              @apply w-full py-1 font-bold text-[#00523F];
+            }
+          }
+        }
+        .signup {
+          @apply w-full flex justify-end text-white text-xs p-2;
+          a {
+            @apply underline text-yellow-400 font-bold;
+          }
+        }
+      }
+      .right {
+        @apply hidden lg:flex lg:w-[50%]  relative;
+        .bgimage {
+          @apply absolute -top-[30px] -right-[43px];
+        }
+        .profileman {
+          @apply absolute top-[80px] right-[50px];
+        }
+        .lampshade {
+          @apply absolute -top-[20px] right-[190px];
+        }
+      }
+    }
+  }
+}

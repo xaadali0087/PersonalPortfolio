@@ -1,0 +1,23 @@
+.load {
+  //   display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.3rem solid #000;
+  border-radius: 100%;
+}
+.open {
+  border-top: 5px solid transparent;
+  animation: load-animate infinite linear 1s;
+}
+@keyframes load-animate {
+  0% {
+    transform: rotate (0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.35;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

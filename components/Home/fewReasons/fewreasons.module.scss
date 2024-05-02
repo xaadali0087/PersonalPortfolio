@@ -1,0 +1,36 @@
+.wrapper {
+  @apply w-full flex justify-center;
+  .container {
+    @apply max-w-[1500px] w-full flex flex-col items-center px-2;
+    .heading {
+      @apply max-w-[690px] w-full flex flex-col items-center mt-4 mb-6 text-lg text-white font-poirets font-bold lg:text-4xl;
+    }
+    .reasons {
+      @apply w-full flex flex-col items-center lg:flex-row lg:justify-between;
+      .cardsection {
+        @apply w-full flex flex-col items-center gap-y-4;
+        .card {
+          @apply w-full flex max-w-[450px] min-h-[200px] rounded-3xl bg-green-500;
+          .logo {
+            @apply w-full flex max-w-[80px] justify-center;
+            .icon {
+              @apply text-white text-6xl rounded-full bg-bgColor mt-2 p-2;
+            }
+          }
+          .text {
+            @apply w-full flex flex-col items-start py-6 px-4 font-poirets;
+            label {
+              @apply w-full text-white lg:text-2xl  font-bold;
+            }
+            span {
+              @apply mt-3 text-lg leading-6 text-white;
+            }
+          }
+        }
+      }
+      .logo {
+        @apply w-full flex justify-center py-4;
+      }
+    }
+  }
+}
